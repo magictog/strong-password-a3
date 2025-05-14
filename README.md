@@ -1,86 +1,97 @@
-# 🔐 Strong Password - A3 Engenharia de Software
+# Projeto Strong Password 💪
 
-Este é um projeto do curso de Engenharia de Software (A3), com foco na construção de um **verificador de força de senhas**, utilizando boas práticas de desenvolvimento, DevOps e segurança da informação. O sistema analisa a composição da senha digitada e fornece uma pontuação de 0 a 5 com base em critérios de robustez, além de recomendações de melhoria.
-
----
-
-## 📌 Funcionalidades
-
-- Escolha do **contexto de uso** da senha (pessoal, corporativo, administrativo, etc.)
-- Verificação da senha com base em:
-  - Letras maiúsculas e minúsculas
-  - Números
-  - Caracteres especiais
-  - Comprimento mínimo (adaptado ao contexto)
-- Pontuação de **0 a 5**
-- Mensagem final com **observações e dicas**
-- Interface simples via terminal
-- Sem armazenamento de senhas (foco em privacidade)
+**Objetivo:** Este projeto tem como objetivo criar um sistema para avaliação da força de senhas, oferecendo recomendações de segurança e explicando a importância de senhas fortes para proteção online.
 
 ---
 
-## ⚙️ Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas
 
-- **Python 3.11**
-- Bibliotecas padrão:
-  - `string`
-  - `getpass`
-- Testes com `unittest`
-- Integração contínua com **GitHub Actions**
+- **Python**: Linguagem principal para o desenvolvimento do projeto.
+- **Flask**: Framework para a criação de aplicações web.
+- **GitHub Actions**: Para CI/CD e automação de testes.
 
 ---
 
-## ▶️ Como Executar o Projeto
+## 📝 Descrição do Projeto
+
+O sistema de **avaliação de senhas** verifica a segurança das senhas inseridas e dá uma análise detalhada sobre a complexidade, incluindo:
+- Comprimento da senha
+- Diversidade de caracteres
+- Utilização de letras maiúsculas/minúsculas
+- Inclusão de números e símbolos
+
+---
+
+## 🔧 Como Rodar o Projeto
+
+Siga os passos abaixo para rodar o projeto em sua máquina local:
 
 1. Clone o repositório:
-   ```bash
-   git clone https://github.com/magictog/strong-password-a3.git
-   cd strong-password-a3
+    ```bash
+    git clone https://github.com/seuusuario/strong-password.git
+    ```
 
+2. Navegue até a pasta do projeto:
+    ```bash
+    cd strong-password
+    ```
 
-Como rodar os testes
-O projeto utiliza unittest. Para rodar os testes:
-python -m unittest test_senha.py
+3. Instale as dependências:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
+4. Execute o projeto:
+    ```bash
+    python app.py
+    ```
 
-CI/CD com GitHub Actions
-Este projeto utiliza integração contínua (CI) por meio do GitHub Actions, que roda os testes automaticamente a cada push ou pull request. O pipeline está definido no arquivo:
-.github/workflows/ci-cd.yml
+Agora, o projeto estará disponível em `http://localhost:5000`.
 
+---
 
-Estrutura do Projeto:
-strong-password-a3/
-├── main.py               # Código principal
-├── test_senha.py         # Testes automatizados
-├── .gitignore            # Arquivos ignorados pelo Git
-├── requirements.txt      # Dependências (nenhuma externa)
-├── README.md             # Documentação
-└── .github/workflows/    # CI/CD (GitHub Actions)
+## 🔧 Funcionalidades
 
+- **Avaliação de Senha**: Informe sua senha e receba uma análise detalhada da sua força.
+- **Recomendações de Melhoria**: O sistema sugere como melhorar a segurança da senha.
+  
+---
 
-Equipe
+## 🛠️ Estrutura do Projeto
+
+- **app.py**: Arquivo principal para execução da aplicação Flask.
+- **requirements.txt**: Dependências do projeto.
+- **tests/**: Diretório contendo os testes automatizados do sistema.
+- **README.md**: Este arquivo!
+
+---
+
+👥 Equipe
 Enrico Aguiar Vrunski
 
 Thiago Ferreira Lima Gonçalves
 
 Matheus Tognon Siqueira
 
-Felipe Soares de Oliveira
+Felipe Soares de Oliveira---
 
 
-Licença
-Este projeto é acadêmico e de código aberto. Sinta-se à vontade para estudar, adaptar ou evoluir.
+## 📄 Licença
+
+Este projeto está licenciado sob a licença MIT - consulte o [LICENSE](LICENSE) para mais detalhes.
 
 ---
 
-## ✅ Próximos passos
+## 📣 Contribua!
 
-1. **Abra o arquivo `README.md` no seu editor** (ex: VS Code ou Bloco de Notas)
-2. Apague o conteúdo antigo
-3. Cole o conteúdo acima
-4. Salve e **faça push para o GitHub**, se desejar atualizar lá também:
+1. Faça o fork do repositório
+2. Crie uma branch para a sua modificação (`git checkout -b feature/novo-recurso`)
+3. Comite suas mudanças (`git commit -am 'Adicionando novo recurso'`)
+4. Envie para o branch remoto (`git push origin feature/novo-recurso`)
+5. Abra um Pull Request
 
-```bash
-git add README.md
-git commit -m "Atualiza README com documentação completa"
-git push
+---
+
+## 🌟 Agradecimentos
+
+Agradeço à comunidade GitHub e a todos os que contribuíram para o desenvolvimento deste projeto!
