@@ -1,0 +1,13 @@
+import unittest
+from main import verificar_forca_senha
+
+class TestVerificadorDeSenha(unittest.TestCase):
+    def test_senha_forte(self):
+        # Vamos apenas garantir que a função roda sem erro com senha forte
+        try:
+            verificar_forca_senha("Abc@1234!", 8)
+        except Exception as e:
+            self.fail(f"A função falhou com exceção: {e}")
+
+if __name__ == "__main__":
+    unittest.main()
